@@ -67,7 +67,8 @@ nav {
   transition: color var(--transition);
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--navy);
   text-decoration: none;
 }
@@ -288,6 +289,11 @@ section:nth-child(even) { background: var(--light); }
   font-size: 0.825rem;
   color: var(--muted);
   margin-bottom: 0.5rem;
+}
+
+.pub-authors strong {
+  color: var(--text);
+  font-weight: 600;
 }
 
 .pub-links { display: flex; gap: 0.5rem; }
