@@ -84,3 +84,4 @@ Lora gives scholarly authority without stuffiness. Inter ensures legibility at s
 | 2026-06-02 | Photo as circle, not rectangle | Warmer/approachable; standard for academic profiles |
 | 2026-06-02 | Research cards marked as placeholders | Research classification not yet decided by user |
 | 2026-06-02 | Added real Google Scholar URL, fixed LinkedIn slug, added DOIs to all 5 papers, corrected 3 wrong journal venues, corrected author list on Veiled Talbot and Anomalous Refraction, added publication years, removed stale pub-note | All were factual errors discoverable via web search |
+| 2026-06-02 | Removed "[Placeholder — research directions being finalized]" from all 3 research cards; tightened card prose and bio | Placeholder text signals an unfinished site to every visitor; the research directions were already clear enough to state confidently |
