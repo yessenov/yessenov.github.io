@@ -1,0 +1,446 @@
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:   #1a2744;
+  --navy2:  #243560;
+  --accent: #2e6da4;
+  --text:   #222831;
+  --muted:  #5a6378;
+  --light:  #f5f7fb;
+  --white:  #ffffff;
+  --border: #dde3ef;
+  --radius: 8px;
+  --max-w:  900px;
+  --transition: 0.2s ease;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.7;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Navigation ── */
+#site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+nav {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--navy);
+  letter-spacing: 0.01em;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--muted);
+  transition: color var(--transition);
+}
+
+.nav-links a:hover {
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--navy);
+}
+
+/* ── Sections ── */
+section { padding: 5rem 2rem; }
+section:nth-child(even) { background: var(--light); }
+
+.section-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: 'Lora', serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.section-intro {
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+  max-width: 680px;
+}
+
+/* ── About ── */
+#about {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: var(--white);
+}
+
+.about-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.about-photo {
+  flex-shrink: 0;
+}
+
+.about-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border);
+}
+
+.photo-placeholder {
+  display: none;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.05em;
+}
+
+.about-text h1 {
+  font-family: 'Lora', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.25rem;
+}
+
+.degree {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.affiliation {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+.affiliation-sub {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.bio {
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+}
+
+/* ── Social Buttons ── */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--navy);
+  background: var(--white);
+  transition: background var(--transition), border-color var(--transition), color var(--transition);
+}
+
+.social-btn svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.social-btn:hover {
+  background: var(--navy);
+  color: var(--white);
+  border-color: var(--navy);
+  text-decoration: none;
+}
+
+/* ── Research Cards ── */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.research-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.research-card:hover {
+  box-shadow: 0 4px 20px rgba(26,39,68,0.08);
+  transform: translateY(-2px);
+}
+
+.card-icon {
+  font-size: 1.25rem;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.research-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+
+.research-card p {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* ── Publications ── */
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.pub-item {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.pub-item:first-child { border-top: 1px solid var(--border); }
+
+.pub-venue {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+
+.pub-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--navy);
+  margin-bottom: 0.2rem;
+}
+
+.pub-authors {
+  font-size: 0.825rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.pub-links { display: flex; gap: 0.5rem; }
+
+.pub-link {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+  transition: background var(--transition), color var(--transition);
+}
+
+.pub-link:hover {
+  background: var(--accent);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.pub-note {
+  margin-top: 1.5rem;
+  font-size: 0.825rem;
+  color: var(--muted);
+}
+
+/* ── CV ── */
+.cv-block {
+  margin-bottom: 2.5rem;
+}
+
+.cv-category {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.cv-entry {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+
+.cv-date {
+  font-size: 0.8rem;
+  color: var(--muted);
+  min-width: 100px;
+  padding-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+.cv-detail {
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.cv-sub {
+  font-size: 0.825rem;
+  color: var(--muted);
+}
+
+.cv-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.65rem 1.5rem;
+  background: var(--navy);
+  color: var(--white);
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background var(--transition);
+}
+
+.cv-download-btn:hover {
+  background: var(--navy2);
+  text-decoration: none;
+}
+
+/* ── Contact ── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.contact-block h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+
+.contact-block p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.contact-block strong {
+  color: var(--text);
+}
+
+.contact-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-links-list a {
+  font-size: 0.9rem;
+  color: var(--accent);
+}
+
+/* ── Footer ── */
+footer {
+  background: var(--navy);
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-size: 0.8rem;
+}
+
+/* ── Mobile ── */
+@media (max-width: 680px) {
+  .nav-links { display: none; }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 2rem;
+    gap: 1rem;
+  }
+  .nav-toggle { display: block; }
+
+  .about-inner { flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; }
+  .social-links { justify-content: center; }
+  .bio { max-width: 100%; }
+
+  .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+
+  .cv-entry { flex-direction: column; gap: 0.2rem; }
+  .cv-date { min-width: unset; }
+}
