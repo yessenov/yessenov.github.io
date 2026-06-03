@@ -296,6 +296,13 @@ section:nth-child(even) { background: var(--light); }
   font-weight: 600;
 }
 
+.pub-teaser {
+  font-size: 0.825rem;
+  color: var(--muted);
+  line-height: 1.55;
+  margin-bottom: 0.35rem;
+}
+
 .pub-links { display: flex; gap: 0.5rem; }
 
 .pub-link {
