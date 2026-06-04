@@ -247,8 +247,9 @@ section:nth-child(even) { background: var(--light); }
   line-height: 1.55;
 }
 
-/* Research section keeps light bg after News section shifted nth-child parity */
-#research { background: var(--light); }
+/* Research keeps light bg so white cards stand out; publications reverts to white to break the consecutive-light merge */
+#research      { background: var(--light); }
+#publications  { background: var(--white); }
 
 /* ── Research Cards ── */
 .research-grid {
