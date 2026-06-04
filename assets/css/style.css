@@ -215,6 +215,41 @@ section:nth-child(even) { background: var(--light); }
   text-decoration: none;
 }
 
+/* ── News ── */
+.news-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: baseline;
+}
+
+.news-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.news-date {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--muted);
+  min-width: 72px;
+  flex-shrink: 0;
+}
+
+.news-text {
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+/* Research section keeps light bg after News section shifted nth-child parity */
+#research { background: var(--light); }
+
 /* ── Research Cards ── */
 .research-grid {
   display: grid;
@@ -451,6 +486,9 @@ footer {
   .about-inner { flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; }
   .social-links { justify-content: center; }
   .bio { max-width: 100%; }
+
+  .news-item { flex-direction: column; gap: 0.1rem; }
+  .news-date { min-width: unset; }
 
   .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
 
