@@ -331,7 +331,7 @@ section:nth-child(even) { background: var(--light); }
 .pub-authors {
   font-size: 0.825rem;
   color: var(--muted);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .pub-authors strong {
@@ -342,8 +342,36 @@ section:nth-child(even) { background: var(--light); }
 .pub-teaser {
   font-size: 0.825rem;
   color: var(--muted);
+  font-style: italic;
   line-height: 1.55;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.pub-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 0.1rem 0.45rem;
+  border-radius: 3px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.pub-badge--new {
+  background: rgba(46,109,164,0.1);
+  color: var(--accent);
+  border: 1px solid rgba(46,109,164,0.25);
+}
+
+.pub-badge--review {
+  background: var(--light);
+  color: var(--muted);
+  border: 1px solid var(--border);
 }
 
 .pub-links { display: flex; gap: 0.5rem; }
