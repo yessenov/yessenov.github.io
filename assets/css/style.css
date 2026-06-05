@@ -107,6 +107,11 @@ section:nth-child(even) { background: var(--light); }
   max-width: 680px;
 }
 
+.stat-num {
+  color: var(--navy);
+  font-weight: 600;
+}
+
 /* ── About ── */
 #about {
   padding-top: 5rem;
