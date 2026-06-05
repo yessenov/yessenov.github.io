@@ -310,7 +310,7 @@ section:nth-child(even) { background: var(--light); }
 }
 
 .pub-item {
-  padding: 1.25rem 0;
+  padding: 1.25rem 0 1.25rem 0.75rem;
   border-left: 3px solid transparent;
   border-bottom: 1px solid var(--border);
   transition: border-left-color var(--transition), background var(--transition);
@@ -325,6 +325,7 @@ section:nth-child(even) { background: var(--light); }
 
 .pub-item.pub-featured {
   border-left-color: var(--accent);
+  background: rgba(46, 109, 164, 0.05);
 }
 
 .pub-venue {

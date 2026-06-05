@@ -3,7 +3,8 @@ const toggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 
 toggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+  const isOpen = navLinks.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', isOpen);
 });
 
 // Close nav on link click (mobile)
