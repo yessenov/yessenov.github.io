@@ -311,10 +311,21 @@ section:nth-child(even) { background: var(--light); }
 
 .pub-item {
   padding: 1.25rem 0;
+  border-left: 3px solid transparent;
   border-bottom: 1px solid var(--border);
+  transition: border-left-color var(--transition), background var(--transition);
 }
 
 .pub-item:first-child { border-top: 1px solid var(--border); }
+
+.pub-item:hover {
+  border-left-color: var(--accent);
+  background: rgba(245, 247, 251, 0.55);
+}
+
+.pub-item.pub-featured {
+  border-left-color: var(--accent);
+}
 
 .pub-venue {
   display: inline-block;
