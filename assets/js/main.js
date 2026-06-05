@@ -9,7 +9,10 @@ toggle.addEventListener('click', () => {
 
 // Close nav on link click (mobile)
 navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  });
 });
 
 // Highlight active nav link on scroll

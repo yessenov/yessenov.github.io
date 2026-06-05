@@ -252,10 +252,6 @@ section:nth-child(even) { background: var(--light); }
   line-height: 1.55;
 }
 
-/* Research keeps light bg so white cards stand out; publications reverts to white to break the consecutive-light merge */
-#research      { background: var(--light); }
-#publications  { background: var(--white); }
-
 /* ── Research Cards ── */
 .research-grid {
   display: grid;
@@ -264,7 +260,7 @@ section:nth-child(even) { background: var(--light); }
 }
 
 .research-card {
-  background: var(--white);
+  background: var(--light);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.75rem;
@@ -320,7 +316,7 @@ section:nth-child(even) { background: var(--light); }
 
 .pub-item:hover {
   border-left-color: var(--accent);
-  background: rgba(245, 247, 251, 0.55);
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .pub-item.pub-featured {
