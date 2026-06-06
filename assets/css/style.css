@@ -516,6 +516,25 @@ footer {
   font-size: 0.8rem;
 }
 
+/* ── Scroll Reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: none;
+}
+
+.research-grid .reveal:nth-child(2) { transition-delay: 0.1s; }
+.research-grid .reveal:nth-child(3) { transition-delay: 0.2s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
 /* ── Mobile ── */
 @media (max-width: 680px) {
   .nav-links { display: none; }
