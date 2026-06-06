@@ -255,13 +255,14 @@ section:nth-child(even) { background: var(--light); }
 /* ── Research Cards ── */
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
 .research-card {
   background: var(--light);
   border: 1px solid var(--border);
+  border-top: 2px solid var(--accent);
   border-radius: var(--radius);
   padding: 1.75rem;
   transition: box-shadow var(--transition), transform var(--transition);
@@ -535,6 +536,8 @@ footer {
   .about-inner { flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; }
   .social-links { justify-content: center; }
   .bio { max-width: 100%; }
+
+  .research-grid { grid-template-columns: 1fr; }
 
   .news-item { flex-direction: column; gap: 0.1rem; }
   .news-date { min-width: unset; }
