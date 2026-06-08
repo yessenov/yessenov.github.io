@@ -177,8 +177,19 @@ section:nth-child(even) { background: var(--light); }
 .bio {
   font-size: 0.95rem;
   color: var(--text);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   max-width: 600px;
+}
+
+.about-metrics {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 1.1rem;
+}
+
+.about-metrics strong {
+  color: var(--navy);
+  font-weight: 600;
 }
 
 /* ── Bio Tags ── */
