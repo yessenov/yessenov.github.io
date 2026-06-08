@@ -335,6 +335,29 @@ section:nth-child(even) { background: var(--light); }
   line-height: 1.65;
 }
 
+.card-paper-count {
+  display: inline-block;
+  margin-top: 0.85rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--accent);
+  transition: opacity var(--transition);
+}
+
+.card-paper-count:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+.card-status {
+  display: inline-block;
+  margin-top: 0.85rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+}
+
 /* ── Publications ── */
 .pub-list {
   display: flex;
