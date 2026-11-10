@@ -7,17 +7,21 @@
   <meta name="description" content="Murat Yessenov is a Postdoctoral Fellow at the Capasso Group, Harvard SEAS, working on flat optics, metalenses, and space-time structured light." />
   <meta name="author" content="Murat Yessenov" />
   <meta name="theme-color" content="#1a2744" />
-  <link rel="canonical" href="https://yessenov.github.io/" />
+  <link rel="canonical" href="https://yessenov.org/" />
+  <script>document.documentElement.classList.add('js');</script>
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="512x512" href="assets/img/icon-512.png" />
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yessenov.github.io/" />
+  <meta property="og:url" content="https://yessenov.org/" />
+  <meta property="og:image" content="https://yessenov.org/assets/img/photo.jpg" />
+  <meta property="og:image:alt" content="Portrait of Murat Yessenov" />
   <meta property="og:title" content="Murat Yessenov" />
   <meta property="og:description" content="Postdoctoral Fellow, Capasso Group · Harvard SEAS. Research in flat optics, metalenses, and space-time structured light." />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Murat Yessenov" />
   <meta name="twitter:description" content="Postdoctoral Fellow, Capasso Group · Harvard SEAS. Research in flat optics, metalenses, and space-time structured light." />
+  <meta name="twitter:image" content="https://yessenov.org/assets/img/photo.jpg" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,7 +34,8 @@
       "name": "Harvard John A. Paulson School of Engineering and Applied Sciences",
       "url": "https://www.seas.harvard.edu"
     },
-    "url": "https://yessenov.github.io/",
+    "url": "https://yessenov.org/",
+    "image": "https://yessenov.org/assets/img/photo.jpg",
     "email": "yessenov@seas.harvard.edu",
     "sameAs": [
       "https://scholar.google.com/citations?user=RJUJREIAAAAJ&hl=en",
@@ -41,7 +46,7 @@
       "@type": "Organization",
       "name": "University of Central Florida"
     },
-    "knowsAbout": ["Flat Optics", "Metalenses", "Space-Time Wave Packets", "Structured Light", "Photonics", "Optics", "Neutral-Atom Arrays"]
+    "knowsAbout": ["Flat Optics", "Metalenses", "Space-Time Wave Packets", "Structured Light", "Photonics", "Optics", "Self-Imaging"]
   }
   </script>
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -55,7 +60,7 @@
   <header id="site-header">
     <nav>
       <span class="nav-name">Murat Yessenov</span>
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#research">Research</a></li>
@@ -63,7 +68,7 @@
         <li><a href="#cv">CV</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-controls="nav-links" aria-expanded="false">&#9776;</button>
     </nav>
   </header>
 
@@ -73,12 +78,12 @@
     <section id="about">
       <div class="about-inner">
         <div class="about-photo">
-          <img src="assets/img/photo.jpg" alt="Murat Yessenov" loading="eager" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <img src="assets/img/photo.jpg" alt="Murat Yessenov" width="180" height="180" loading="eager" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
           <div class="photo-placeholder">MY</div>
         </div>
         <div class="about-text">
           <h1>Murat Yessenov <span class="degree">Ph.D.</span></h1>
-          <p class="affiliation">Postdoctoral Fellow &middot; <a href="https://www.seas.harvard.edu/capasso" target="_blank" rel="noopener noreferrer">Capasso Group</a>, Harvard SEAS</p>
+          <p class="affiliation">Postdoctoral Fellow &middot; <a href="https://capasso.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">Capasso Group</a>, Harvard SEAS</p>
           <p class="bio">
             I work on flat optics and structured light — from high-NA metalenses to space-time wave packets with propagation properties that challenge classical limits.
             I did my Ph.D. at <a href="https://www.creol.ucf.edu" target="_blank" rel="noopener noreferrer">CREOL, UCF</a>,
@@ -92,7 +97,7 @@
             <span class="bio-tag">Metalenses</span>
             <span class="bio-tag">Space-Time Wave Packets</span>
             <span class="bio-tag">Structured Light</span>
-            <span class="bio-tag">Neutral-Atom Arrays</span>
+            <span class="bio-tag">Self-Imaging</span>
           </div>
           <div class="social-links">
             <a href="https://scholar.google.com/citations?user=RJUJREIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" class="social-btn">
@@ -127,11 +132,11 @@
           </div>
           <div class="news-item reveal">
             <span class="news-date">Jan 2025</span>
-            <p class="news-text">Joined the <a href="https://www.seas.harvard.edu/capasso" target="_blank" rel="noopener noreferrer">Capasso Group</a> at Harvard SEAS as Postdoctoral Fellow.</p>
+            <p class="news-text">Joined the <a href="https://capasso.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">Capasso Group</a> at Harvard SEAS as Postdoctoral Fellow.</p>
           </div>
           <div class="news-item reveal">
             <span class="news-date">2023</span>
-            <p class="news-text">Paper on ultra-compact synthesis of space-time wave packets published in <em>Optics Letters</em>. <a href="https://doi.org/10.1364/OL.48.002500" target="_blank" rel="noopener noreferrer">Read &rarr;</a></p>
+            <p class="news-text">Paper on ultra-compact synthesis of space-time wave packets published in <em>Optics Letters</em>. <a href="https://doi.org/10.1364/OL.483902" target="_blank" rel="noopener noreferrer">Read &rarr;</a></p>
           </div>
           <div class="news-item reveal">
             <span class="news-date">2022</span>
@@ -160,8 +165,8 @@
             </div>
             <h3>Flat Optics &amp; Metalenses</h3>
             <p>
-              Design and fabrication of high-NA metalenses (NA &gt; 0.8) operating across the visible spectrum.
-              Current focus: metalenses for precision metrology and diffraction-limited imaging at the wafer scale.
+              Metasurfaces and cascaded meta-optics that shape wavefronts at the nanoscale,
+              reaching imaging and beam-shaping regimes that no single flat element can.
             </p>
             <span class="card-status">Active · Harvard 2025–</span>
           </div>
@@ -189,10 +194,10 @@
                 <ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(-60 12 12)"/>
               </svg>
             </div>
-            <h3>Quantum &amp; Atom Optics</h3>
+            <h3>Self-Imaging &amp; 3D Light Shaping</h3>
             <p>
-              Meta-optics for reconfigurable neutral-atom arrays with &gt;10,000 trap sites,
-              in collaboration with the Lukin Group (Harvard) and QuEra Computing.
+              Programmable self-imaging based on the Montgomery effect: structured fields that reproduce a pattern
+              at many planes along propagation, for multi-plane imaging and optical trapping.
             </p>
             <span class="card-status">Active · Harvard 2025–</span>
           </div>
@@ -236,11 +241,11 @@
 
           <div class="pub-item reveal">
             <div class="pub-venue">Optics Letters &middot; 2023</div>
-            <p class="pub-title"><a href="https://doi.org/10.1364/OL.48.002500" target="_blank" rel="noopener noreferrer">Ultra-compact synthesis of space-time wave packets</a></p>
+            <p class="pub-title"><a href="https://doi.org/10.1364/OL.483902" target="_blank" rel="noopener noreferrer">Ultra-compact synthesis of space-time wave packets</a></p>
             <p class="pub-authors"><strong>M. Yessenov</strong>, A. F. Abouraddy</p>
             <p class="pub-teaser">Compact, single-pass synthesis of space-time wave packets using a greatly simplified optical arrangement — an order-of-magnitude reduction in system footprint over prior implementations.</p>
             <div class="pub-links">
-              <a href="https://doi.org/10.1364/OL.48.002500" target="_blank" rel="noopener noreferrer" class="pub-link">Paper</a>
+              <a href="https://doi.org/10.1364/OL.483902" target="_blank" rel="noopener noreferrer" class="pub-link">Paper</a>
               <a href="https://arxiv.org/abs/2212.12091" target="_blank" rel="noopener noreferrer" class="pub-link pub-link--preprint">arXiv</a>
             </div>
           </div>
@@ -372,7 +377,7 @@
           </div>
           <div class="contact-block reveal">
             <h3>Currently</h3>
-            <p>Postdoctoral Fellow at the <a href="https://www.seas.harvard.edu/capasso" target="_blank" rel="noopener noreferrer">Capasso Group</a>, working on high-NA metalenses and meta-optics for reconfigurable neutral-atom arrays — in collaboration with the Lukin Group and QuEra Computing.</p>
+            <p>Postdoctoral Fellow at the <a href="https://capasso.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">Capasso Group</a>, working on flat optics and programmable self-imaging of light.</p>
             <p>Happy to discuss flat optics, space-time structured light, or any intersection of nanophotonics and quantum technologies.</p>
           </div>
         </div>
