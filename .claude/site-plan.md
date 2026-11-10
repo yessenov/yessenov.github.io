@@ -11,7 +11,7 @@ right below it for the next run.
 ## Task queue
 
 ### Night 1 — Wed Nov 11
-- [ ] **T1 Housekeeping.** Delete `Profile.pdf`. Replace the footer text "© 2026 · Harvard University" with "© 2026 Murat Yessenov · Last updated November 2026". Open the PR.
+- [x] **T1 Housekeeping.** *(done 2026-11-10: Profile.pdf deleted, footer updated, PR opened)* Delete `Profile.pdf`. Replace the footer text "© 2026 · Harvard University" with "© 2026 Murat Yessenov · Last updated November 2026". Open the PR.
 - [ ] **T2 Newest papers → News + metrics.** Add News items (month + year, newest first) for the recent published items listed under *Recent items* below. Update the metrics in About and Publications to the current numbers (Google Scholar: 2,620 citations, h-index 25 as of Nov 9, 2026; ~54 peer-reviewed journal articles). Use "50+ peer-reviewed articles · 2,600+ citations". Keep News to the 6–8 most recent items.
 - [ ] **T3 Selected Publications refresh.** Add *Ultrafast space-time optical merons* (Nat. Commun. 2025, first author) and *On-chip space–time wave packet laser array* (Nat. Photon. 2026). Keep 6–8 entries total, each with venue, year, authors (own name bold), one-line teaser, Paper + arXiv links.
 
@@ -145,3 +145,4 @@ Get exact months from Crossref publication dates.
 - Divliansky, I., Abouraddy, A., Glebov, L., Mhibik, O., & Yessenov, M. (2024). Systems and methods using a pair of rotated volume Bragg gratings for laser amplification. U.S. Patent Application 18/532,983.
 
 ## Run log
+- 2026-11-10 09:58 ET — T1 Housekeeping — done. Deleted `Profile.pdf` (no page linked to it); footer now "© 2026 Murat Yessenov · Last updated November 2026"; opened PR. No PR existed before this run, so no owner feedback to act on. Verified: index.html 200, all local assets present, HTML balanced, no horizontal scroll at 375 px.
