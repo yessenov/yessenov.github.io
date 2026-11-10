@@ -42,6 +42,7 @@ right below it for the next run.
 - Plain static HTML + the existing `assets/css/style.css` and `assets/js/main.js`. No build step, no frameworks, no new fonts. Follow `.interface-design/system.md` (navy/steel palette, Lora headings, Inter body, no dark mode).
 - Use root-relative links (`/`, `/publications.html`, `/research/self-imaging.html`, `/#contact`) so subpages work.
 - Never touch `CNAME`. Never push to `main`. Never merge the PR.
+- No CV PDF or CV download link on the site (the owner removed it on Nov 10, 2026). The on-page CV section stays.
 - Only published, public information. When unsure whether something is public, leave it out and mention it in the PR.
 
 ## Research topics (owner's grouping)
