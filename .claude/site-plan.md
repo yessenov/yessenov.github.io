@@ -1,4 +1,4 @@
-# Website improvement plan (nightly runs, Nov 10–16, 2026)
+# Website improvement plan (nightly runs, Nov 11–17, 2026; 12am, 3am, 6am Eastern)
 
 Work branch: `claude/site-improvements` → one pull request into `main`.
 The live site (yessenov.org) publishes from `main`; nothing goes live until the owner merges.
@@ -10,32 +10,32 @@ right below it for the next run.
 
 ## Task queue
 
-### Night 1 — Tue Nov 10
+### Night 1 — Wed Nov 11
 - [ ] **T1 Housekeeping.** Delete `Profile.pdf`. Replace the footer text "© 2026 · Harvard University" with "© 2026 Murat Yessenov · Last updated November 2026". Open the PR.
 - [ ] **T2 Newest papers → News + metrics.** Add News items (month + year, newest first) for the recent published items listed under *Recent items* below. Update the metrics in About and Publications to the current numbers (Google Scholar: 2,620 citations, h-index 25 as of Nov 9, 2026; ~54 peer-reviewed journal articles). Use "50+ peer-reviewed articles · 2,600+ citations". Keep News to the 6–8 most recent items.
 - [ ] **T3 Selected Publications refresh.** Add *Ultrafast space-time optical merons* (Nat. Commun. 2025, first author) and *On-chip space–time wave packet laser array* (Nat. Photon. 2026). Keep 6–8 entries total, each with venue, year, authors (own name bold), one-line teaser, Paper + arXiv links.
 
-### Night 2 — Wed Nov 11
+### Night 2 — Thu Nov 12
 - [ ] **T4 Full publications page, part 1.** Create `publications.html` in the site's style (same header/nav/footer, `assets/css/style.css`). Journal articles grouped by year, newest first; own name bold; each with DOI link and arXiv link when one exists. This run: preprints + 2024–2026.
 - [ ] **T5 Full publications page, part 2.** Add 2018–2023 and a Patents section. Add "Publications" to the nav on every page pointing to `/publications.html`, and change the homepage "Full list on Google Scholar" link to point to the new page (keep Scholar as a secondary link).
 - [ ] **T6 Verify the publication list.** Check every entry against Crossref/the publisher (title, authors, journal, volume, pages/article number, year, DOI). The source list below comes from the CV and has known errors (see *Known CV errors*). Fix them on the page.
 
-### Night 3 — Thu Nov 12
+### Night 3 — Fri Nov 13
 - [ ] **T7 Figures.** For each of the four research topics, pick one representative figure from one of that topic's papers (see *Figure rules*). Save to `assets/img/research/<slug>.jpg` (or .webp), ~1200 px wide, ≤ 250 KB. Record source paper, figure number and license in the *Figure log* below.
 - [ ] **T8 Research page template + Topic 1 (Space-time wave packets).** Create `research/space-time-wave-packets.html`.
 - [ ] **T9 Topic 2 (Non-separable partially coherent light).** Create `research/partially-coherent-light.html`.
 
-### Night 4 — Fri Nov 13
+### Night 4 — Sat Nov 14
 - [ ] **T10 Topic 3 (Self-imaging and 3D light shaping).** Create `research/self-imaging.html`.
 - [ ] **T11 Topic 4 (Compact instrumentation with r-CBGs).** Create `research/compact-instrumentation.html`.
 - [ ] **T12 Homepage research section.** Replace the three research cards with four figure cards (one per topic: figure thumbnail, title, 1–2 sentence summary); clicking a card opens its topic page. Update the section intro, bio tags and the JSON-LD `knowsAbout` to match the four topics.
 
-### Night 5 — Sat Nov 14
+### Night 5 — Sun Nov 15
 - [ ] **T13 QA.** Every internal and external link resolves (DOIs, arXiv, images, nav anchors from subpages). No console errors. Layout works at 375 px wide with no horizontal scroll. Fix what fails.
 - [ ] **T14 Content audit.** Consistent numbers and wording across pages; each page has its own `<title>`, description, canonical URL and og tags; alt text on every figure; one `<h1>` per page.
 - [ ] **T15 Polish.** `sitemap.xml`, `robots.txt`, a simple `404.html` in the site style; `loading="lazy"` and width/height on below-the-fold images.
 
-### Nights 6–7 — Sun Nov 15, Mon Nov 16 (buffer)
+### Nights 6–7 — Mon Nov 16, Tue Nov 17 (buffer)
 - [ ] **T16 Finish anything unchecked above, then address the owner's PR comments, then small polish.** If nothing is left, make no changes.
 
 ## Site rules
