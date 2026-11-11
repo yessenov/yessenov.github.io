@@ -629,6 +629,10 @@ footer {
 .news-list .reveal:nth-child(2) { transition-delay: 0.07s; }
 .news-list .reveal:nth-child(3) { transition-delay: 0.14s; }
 .news-list .reveal:nth-child(4) { transition-delay: 0.21s; }
+.news-list .reveal:nth-child(5) { transition-delay: 0.28s; }
+.news-list .reveal:nth-child(6) { transition-delay: 0.35s; }
+.news-list .reveal:nth-child(7) { transition-delay: 0.42s; }
+.news-list .reveal:nth-child(8) { transition-delay: 0.49s; }
 
 .pub-list .reveal:nth-child(2) { transition-delay: 0.06s; }
 .pub-list .reveal:nth-child(3) { transition-delay: 0.12s; }
