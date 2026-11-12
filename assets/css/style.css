@@ -531,6 +531,12 @@ nav.pub-jump {
   scroll-margin-top: 72px;
 }
 
+.pub-secondary { color: var(--muted); }
+
+.pub-patent-num {
+  font-variant-numeric: tabular-nums;
+}
+
 .pub-cite {
   font-size: 0.8rem;
   color: var(--muted);
