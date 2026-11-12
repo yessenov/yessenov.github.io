@@ -68,7 +68,8 @@ nav {
 }
 
 .nav-links a:hover,
-.nav-links a.active {
+.nav-links a.active,
+.nav-links a[aria-current="page"] {
   color: var(--navy);
   text-decoration: none;
 }
@@ -457,7 +458,7 @@ section:nth-child(even) { background: var(--light); }
   border: 1px solid var(--border);
 }
 
-.pub-links { display: flex; gap: 0.5rem; }
+.pub-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 
 .pub-link {
   font-size: 0.75rem;
@@ -489,6 +490,51 @@ section:nth-child(even) { background: var(--light); }
   margin-top: 1.5rem;
   font-size: 0.825rem;
   color: var(--muted);
+}
+
+/* ── Full publications page ── */
+a.nav-name:hover { text-decoration: none; color: var(--accent); }
+
+nav.pub-jump {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  max-width: none;
+  height: auto;
+  margin: -1.25rem 0 1rem;
+  padding: 0;
+}
+
+.pub-jump a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 0.2rem 0.75rem;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.pub-jump a:hover {
+  color: var(--navy);
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+.pub-year {
+  font-family: 'Lora', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 2.5rem 0 0.75rem;
+  scroll-margin-top: 72px;
+}
+
+.pub-cite {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
 }
 
 /* ── CV ── */
