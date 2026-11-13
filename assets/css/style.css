@@ -69,7 +69,7 @@ nav {
 
 .nav-links a:hover,
 .nav-links a.active,
-.nav-links a[aria-current="page"] {
+.nav-links a[aria-current] {
   color: var(--navy);
   text-decoration: none;
 }
@@ -723,4 +723,59 @@ footer {
 
   .cv-entry { flex-direction: column; gap: 0.2rem; }
   .cv-date { min-width: unset; }
+}
+
+/* ── Research topic pages ── */
+.topic-back {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.topic-kicker {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+.topic-text { max-width: 680px; }
+.topic-text p { margin-bottom: 1rem; }
+
+.topic-figure { margin: 2rem 0 0; }
+.topic-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--white);
+}
+.topic-figure figcaption {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 0.6rem;
+  max-width: 680px;
+}
+
+.key-results {
+  list-style: none;
+  padding: 0;
+  max-width: 720px;
+}
+.key-results li {
+  border-left: 3px solid var(--accent);
+  padding: 0.15rem 0 0.15rem 1rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+}
+.key-results strong { color: var(--navy); }
+.key-ref {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
 }
