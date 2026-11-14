@@ -779,3 +779,43 @@ footer {
   color: var(--muted);
   margin-top: 0.2rem;
 }
+
+/* ── Homepage research topic cards ── */
+.topic-grid { grid-template-columns: repeat(2, 1fr); }
+
+.topic-card {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+  text-decoration: none;
+}
+.topic-card:hover { text-decoration: none; }
+.topic-card:hover h3 { color: var(--accent); }
+.topic-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.topic-card .card-paper-count { margin-top: auto; padding-top: 0.85rem; }
+
+.card-thumb {
+  aspect-ratio: 2 / 1;
+  margin: -0.25rem 0 1rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--accent);
+  overflow: hidden;
+}
+.card-thumb svg,
+.card-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.topic-grid .reveal:nth-child(4) { transition-delay: 0.3s; }
+
+@media (max-width: 680px) {
+  .topic-grid { grid-template-columns: 1fr; }
+}

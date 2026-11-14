@@ -46,7 +46,7 @@
       "@type": "Organization",
       "name": "University of Central Florida"
     },
-    "knowsAbout": ["Flat Optics", "Metalenses", "Space-Time Wave Packets", "Structured Light", "Photonics", "Optics", "Self-Imaging"]
+    "knowsAbout": ["Structured Light", "Space-Time Wave Packets", "Partially Coherent Light", "Self-Imaging", "Talbot Effect", "Volume Bragg Gratings", "Optical Spectroscopy", "Photonics", "Optics"]
   }
   </script>
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -93,11 +93,11 @@
             <strong>50+</strong> peer-reviewed articles &middot; <strong>2,600+</strong> citations &middot; <a href="https://scholar.google.com/citations?user=RJUJREIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
           </p>
           <div class="bio-tags" aria-label="Research areas">
-            <span class="bio-tag">Flat Optics</span>
-            <span class="bio-tag">Metalenses</span>
             <span class="bio-tag">Space-Time Wave Packets</span>
-            <span class="bio-tag">Structured Light</span>
+            <span class="bio-tag">Partially Coherent Light</span>
             <span class="bio-tag">Self-Imaging</span>
+            <span class="bio-tag">Volume Bragg Gratings</span>
+            <span class="bio-tag">Structured Light</span>
           </div>
           <div class="social-links">
             <a href="https://scholar.google.com/citations?user=RJUJREIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" class="social-btn">
@@ -167,56 +167,87 @@
       <div class="section-inner">
         <h2 class="section-title">Research</h2>
         <p class="section-intro">
-          My work develops the physics and devices that give light new forms — from metalenses that reshape wavefronts at the nanoscale to space-time wave packets with propagation properties that have no classical counterpart.
+          I study how the spatial and spectral structure of light can be designed together, and what this makes possible:
+          pulses that resist diffraction and travel at a chosen group velocity, incoherent light with the same properties,
+          beams that refocus at programmed distances, and centimeter-scale optical instruments built from a single block of glass.
+          Each topic below has its own page with the key results and publications.
         </p>
-        <div class="research-grid">
+        <div class="research-grid topic-grid">
 
-          <div class="research-card reveal">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="9"/>
-                <ellipse cx="12" cy="12" rx="4" ry="9"/>
-                <line x1="3" y1="12" x2="21" y2="12"/>
+          <!-- Thumbnails are line drawings until the topic figures (task T7b) are added; then replace each SVG with an <img>. -->
+          <a class="research-card topic-card reveal" href="/research/space-time-wave-packets.html">
+            <div class="card-thumb" aria-hidden="true">
+              <svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-linecap="round">
+                <line x1="20" y1="60" x2="220" y2="60" stroke-width="1" stroke-dasharray="3 4" opacity="0.5"/>
+                <path d="M70 20 L170 100 M70 100 L170 20" stroke-width="1.5" opacity="0.55"/>
+                <ellipse cx="120" cy="60" rx="16" ry="9" fill="currentColor" stroke="none" opacity="0.85"/>
+                <path d="M196 54 L210 60 L196 66" stroke-width="1.5"/>
+                <text x="214" y="50" font-size="11" fill="currentColor" stroke="none" font-style="italic">v</text>
               </svg>
             </div>
-            <h3>Flat Optics &amp; Metalenses</h3>
+            <h3>Space-time wave packets</h3>
             <p>
-              Metasurfaces and cascaded meta-optics that shape wavefronts at the nanoscale,
-              reaching imaging and beam-shaping regimes that no single flat element can.
+              Pulsed beams in which each wavelength travels at its own angle. They propagate without diffraction,
+              and their group velocity in free space is set by design, above or below <em>c</em>.
             </p>
-            <span class="card-status">Active · Harvard 2025–</span>
-          </div>
+            <span class="card-paper-count">Overview and papers &rarr;</span>
+          </a>
 
-          <div class="research-card reveal">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
-                <path d="M2 12c2-5 4-7 5.5-7S10 8.5 12 12s2.5 7 4.5 7 3.5-2 5.5-7"/>
+          <a class="research-card topic-card reveal" href="/research/partially-coherent-light.html">
+            <div class="card-thumb" aria-hidden="true">
+              <svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-linecap="round">
+                <circle cx="40" cy="60" r="6" fill="currentColor" stroke="none" opacity="0.85"/>
+                <path d="M46 60 Q80 52 112 50 T180 30" stroke-width="1.5" opacity="0.9"/>
+                <path d="M46 60 Q80 58 112 56 T190 50" stroke-width="1.5" opacity="0.7"/>
+                <path d="M46 60 Q80 62 112 64 T190 70" stroke-width="1.5" opacity="0.5"/>
+                <path d="M46 60 Q80 68 112 70 T180 90" stroke-width="1.5" opacity="0.35"/>
+                <text x="186" y="28" font-size="10" fill="currentColor" stroke="none">&#955;&#8321;</text>
+                <text x="186" y="98" font-size="10" fill="currentColor" stroke="none">&#955;&#8345;</text>
               </svg>
             </div>
-            <h3>Space-Time Structured Light</h3>
+            <h3>Non-separable partially coherent light</h3>
             <p>
-              Spatio-temporally structured wave packets — light with tightly correlated spatial and spectral degrees of freedom —
-              exhibit anomalous propagation, refraction, and diffraction that have no counterpart in conventional optics.
+              Broadband incoherent light from LEDs and superluminescent diodes, structured so that a narrow beam
+              resists diffraction and its coherence travels at a tunable speed.
             </p>
-            <a href="#publications" class="card-paper-count">Selected papers below &rarr;</a>
-          </div>
+            <span class="card-paper-count">Overview and papers &rarr;</span>
+          </a>
 
-          <div class="research-card reveal">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/>
-                <ellipse cx="12" cy="12" rx="9" ry="3.5"/>
-                <ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(60 12 12)"/>
-                <ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(-60 12 12)"/>
+          <a class="research-card topic-card reveal" href="/research/self-imaging.html">
+            <div class="card-thumb" aria-hidden="true">
+              <svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-linecap="round">
+                <line x1="14" y1="60" x2="226" y2="60" stroke-width="1" stroke-dasharray="3 4" opacity="0.5"/>
+                <path d="M20 36 L60 60 L20 84 M60 60 L100 36 L140 60 L100 84 L60 60 M140 60 L180 36 L220 60 L180 84 L140 60" stroke-width="1.3" opacity="0.55"/>
+                <circle cx="60" cy="60" r="4.5" fill="currentColor" stroke="none"/>
+                <circle cx="140" cy="60" r="4.5" fill="currentColor" stroke="none"/>
+                <circle cx="220" cy="60" r="4.5" fill="currentColor" stroke="none"/>
               </svg>
             </div>
-            <h3>Self-Imaging &amp; 3D Light Shaping</h3>
+            <h3>Self-imaging and 3D light shaping</h3>
             <p>
-              Programmable self-imaging based on the Montgomery effect: structured fields that reproduce a pattern
-              at many planes along propagation, for multi-plane imaging and optical trapping.
+              Talbot and Montgomery effects: fields whose spatial frequencies are chosen so that a pattern or a tightly
+              focused spot forms again and again at programmed distances along the beam.
             </p>
-            <span class="card-status">Active · Harvard 2025–</span>
-          </div>
+            <span class="card-paper-count">Overview and papers &rarr;</span>
+          </a>
+
+          <a class="research-card topic-card reveal" href="/research/compact-instrumentation.html">
+            <div class="card-thumb" aria-hidden="true">
+              <svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-linecap="round">
+                <rect x="80" y="30" width="80" height="60" rx="2" stroke-width="1.5"/>
+                <path d="M88 82 L104 38 M100 82 L116 38 M114 82 L130 38 M130 82 L146 38 M148 82 L158 54" stroke-width="1" opacity="0.5"/>
+                <path d="M24 60 L80 60" stroke-width="1.8"/>
+                <path d="M70 55 L80 60 L70 65" stroke-width="1.5"/>
+                <path d="M96 60 L96 104 M118 60 L118 104 M142 60 L142 104" stroke-width="1.5" opacity="0.8"/>
+              </svg>
+            </div>
+            <h3>Compact instrumentation with r-CBGs</h3>
+            <p>
+              Rotated chirped volume Bragg gratings spread the spectrum of light inside a block of glass, replacing
+              the grating, lens and free space of conventional spectrometers and pulse shapers.
+            </p>
+            <span class="card-paper-count">Overview and papers &rarr;</span>
+          </a>
 
         </div>
       </div>
