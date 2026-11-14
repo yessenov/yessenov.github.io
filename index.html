@@ -46,7 +46,7 @@
       "@type": "Organization",
       "name": "University of Central Florida"
     },
-    "knowsAbout": ["Flat Optics", "Metalenses", "Space-Time Wave Packets", "Structured Light", "Photonics", "Optics", "Self-Imaging"]
+    "knowsAbout": ["Structured Light", "Space-Time Wave Packets", "Partially Coherent Light", "Self-Imaging", "Talbot Effect", "Volume Bragg Gratings", "Optical Spectroscopy", "Photonics", "Optics"]
   }
   </script>
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -64,7 +64,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#research">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
+        <li><a href="/publications.html">Publications</a></li>
         <li><a href="#cv">CV</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -93,11 +93,11 @@
             <strong>50+</strong> peer-reviewed articles &middot; <strong>2,600+</strong> citations &middot; <a href="https://scholar.google.com/citations?user=RJUJREIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
           </p>
           <div class="bio-tags" aria-label="Research areas">
-            <span class="bio-tag">Flat Optics</span>
-            <span class="bio-tag">Metalenses</span>
             <span class="bio-tag">Space-Time Wave Packets</span>
-            <span class="bio-tag">Structured Light</span>
+            <span class="bio-tag">Partially Coherent Light</span>
             <span class="bio-tag">Self-Imaging</span>
+            <span class="bio-tag">Volume Bragg Gratings</span>
+            <span class="bio-tag">Structured Light</span>
           </div>
           <div class="social-links">
             <a href="https://scholar.google.com/citations?user=RJUJREIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" class="social-btn">
@@ -127,20 +127,36 @@
         <h2 class="section-title">News</h2>
         <div class="news-list">
           <div class="news-item reveal">
-            <span class="news-date">Jun 2026</span>
+            <span class="news-date">Oct 2026</span>
+            <p class="news-text">Paper on avoiding multiple line-of-sight obstacles at 130&nbsp;m with locally bending space-time wave packets published in <em>APL Photonics</em>. <a href="https://doi.org/10.1063/5.0353169" target="_blank" rel="noopener noreferrer">Read &rarr;</a></p>
+          </div>
+          <div class="news-item reveal">
+            <span class="news-date">2026</span>
+            <p class="news-text">U.S. Patent 12,613,365 granted, with co-inventors at CREOL.</p>
+          </div>
+          <div class="news-item reveal">
+            <span class="news-date">Sep 2026</span>
+            <p class="news-text">Paper on an on-chip laser array that emits space-time wave packets published in <em>Nature Photonics</em>, with J. Lee, M. Khajavikhan and co-workers. <a href="https://doi.org/10.1038/s41566-026-02003-0" target="_blank" rel="noopener noreferrer">Read &rarr;</a></p>
+          </div>
+          <div class="news-item reveal">
+            <span class="news-date">Jul 2026</span>
+            <p class="news-text">Paper on the self-healing of the Montgomery pattern published in <em>Optics Letters</em>; first author Athena Xu, a Harvard undergraduate I mentor. <a href="https://doi.org/10.1364/OL.605394" target="_blank" rel="noopener noreferrer">Read &rarr;</a></p>
+          </div>
+          <div class="news-item reveal">
+            <span class="news-date">Jul 2026</span>
+            <p class="news-text">Invited talk at the IEEE Photonics Society Summer Topical Meeting, Tulum, Mexico.</p>
+          </div>
+          <div class="news-item reveal">
+            <span class="news-date">May 2026</span>
+            <p class="news-text">Invited talk at EIPBN 2026, Denver, CO.</p>
+          </div>
+          <div class="news-item reveal">
+            <span class="news-date">Jan 2026</span>
             <p class="news-text">Paper on the spatially structured Montgomery effect published in <em>Optica</em>. <a href="https://doi.org/10.1364/OPTICA.582198" target="_blank" rel="noopener noreferrer">Read &rarr;</a></p>
           </div>
           <div class="news-item reveal">
-            <span class="news-date">Jan 2025</span>
-            <p class="news-text">Joined the <a href="https://capasso.seas.harvard.edu/" target="_blank" rel="noopener noreferrer">Capasso Group</a> at Harvard SEAS as Postdoctoral Fellow.</p>
-          </div>
-          <div class="news-item reveal">
-            <span class="news-date">2023</span>
-            <p class="news-text">Paper on ultra-compact synthesis of space-time wave packets published in <em>Optics Letters</em>. <a href="https://doi.org/10.1364/OL.483902" target="_blank" rel="noopener noreferrer">Read &rarr;</a></p>
-          </div>
-          <div class="news-item reveal">
-            <span class="news-date">2022</span>
-            <p class="news-text">Invited review of space-time wave packets published in <em>Advances in Optics and Photonics</em>. <a href="https://opg.optica.org/aop/abstract.cfm?uri=aop-14-3-455" target="_blank" rel="noopener noreferrer">Read &rarr;</a></p>
+            <span class="news-date">Sep 2025</span>
+            <p class="news-text">Paper on ultrafast space-time optical merons in momentum-energy space published in <em>Nature Communications</em>. <a href="https://doi.org/10.1038/s41467-025-63641-6" target="_blank" rel="noopener noreferrer">Read &rarr;</a></p>
           </div>
         </div>
       </div>
@@ -151,56 +167,87 @@
       <div class="section-inner">
         <h2 class="section-title">Research</h2>
         <p class="section-intro">
-          My work develops the physics and devices that give light new forms — from metalenses that reshape wavefronts at the nanoscale to space-time wave packets with propagation properties that have no classical counterpart.
+          I study how the spatial and spectral structure of light can be designed together, and what this makes possible:
+          pulses that resist diffraction and travel at a chosen group velocity, incoherent light with the same properties,
+          beams that refocus at programmed distances, and centimeter-scale optical instruments built from a single block of glass.
+          Each topic below has its own page with the key results and publications.
         </p>
-        <div class="research-grid">
+        <div class="research-grid topic-grid">
 
-          <div class="research-card reveal">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="9"/>
-                <ellipse cx="12" cy="12" rx="4" ry="9"/>
-                <line x1="3" y1="12" x2="21" y2="12"/>
+          <!-- Thumbnails are line drawings until the topic figures (task T7b) are added; then replace each SVG with an <img>. -->
+          <a class="research-card topic-card reveal" href="/research/space-time-wave-packets.html">
+            <div class="card-thumb" aria-hidden="true">
+              <svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-linecap="round">
+                <line x1="20" y1="60" x2="220" y2="60" stroke-width="1" stroke-dasharray="3 4" opacity="0.5"/>
+                <path d="M70 20 L170 100 M70 100 L170 20" stroke-width="1.5" opacity="0.55"/>
+                <ellipse cx="120" cy="60" rx="16" ry="9" fill="currentColor" stroke="none" opacity="0.85"/>
+                <path d="M196 54 L210 60 L196 66" stroke-width="1.5"/>
+                <text x="214" y="50" font-size="11" fill="currentColor" stroke="none" font-style="italic">v</text>
               </svg>
             </div>
-            <h3>Flat Optics &amp; Metalenses</h3>
+            <h3>Space-time wave packets</h3>
             <p>
-              Metasurfaces and cascaded meta-optics that shape wavefronts at the nanoscale,
-              reaching imaging and beam-shaping regimes that no single flat element can.
+              Pulsed beams in which each wavelength travels at its own angle. They propagate without diffraction,
+              and their group velocity in free space is set by design, above or below <em>c</em>.
             </p>
-            <span class="card-status">Active · Harvard 2025–</span>
-          </div>
+            <span class="card-paper-count">Overview and papers &rarr;</span>
+          </a>
 
-          <div class="research-card reveal">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
-                <path d="M2 12c2-5 4-7 5.5-7S10 8.5 12 12s2.5 7 4.5 7 3.5-2 5.5-7"/>
+          <a class="research-card topic-card reveal" href="/research/partially-coherent-light.html">
+            <div class="card-thumb" aria-hidden="true">
+              <svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-linecap="round">
+                <circle cx="40" cy="60" r="6" fill="currentColor" stroke="none" opacity="0.85"/>
+                <path d="M46 60 Q80 52 112 50 T180 30" stroke-width="1.5" opacity="0.9"/>
+                <path d="M46 60 Q80 58 112 56 T190 50" stroke-width="1.5" opacity="0.7"/>
+                <path d="M46 60 Q80 62 112 64 T190 70" stroke-width="1.5" opacity="0.5"/>
+                <path d="M46 60 Q80 68 112 70 T180 90" stroke-width="1.5" opacity="0.35"/>
+                <text x="186" y="28" font-size="10" fill="currentColor" stroke="none">&#955;&#8321;</text>
+                <text x="186" y="98" font-size="10" fill="currentColor" stroke="none">&#955;&#8345;</text>
               </svg>
             </div>
-            <h3>Space-Time Structured Light</h3>
+            <h3>Non-separable partially coherent light</h3>
             <p>
-              Spatio-temporally structured wave packets — light with tightly correlated spatial and spectral degrees of freedom —
-              exhibit anomalous propagation, refraction, and diffraction that have no counterpart in conventional optics.
+              Broadband incoherent light from LEDs and superluminescent diodes, structured so that a narrow beam
+              resists diffraction and its coherence travels at a tunable speed.
             </p>
-            <a href="#publications" class="card-paper-count">5 selected papers below &rarr;</a>
-          </div>
+            <span class="card-paper-count">Overview and papers &rarr;</span>
+          </a>
 
-          <div class="research-card reveal">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/>
-                <ellipse cx="12" cy="12" rx="9" ry="3.5"/>
-                <ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(60 12 12)"/>
-                <ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(-60 12 12)"/>
+          <a class="research-card topic-card reveal" href="/research/self-imaging.html">
+            <div class="card-thumb" aria-hidden="true">
+              <svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-linecap="round">
+                <line x1="14" y1="60" x2="226" y2="60" stroke-width="1" stroke-dasharray="3 4" opacity="0.5"/>
+                <path d="M20 36 L60 60 L20 84 M60 60 L100 36 L140 60 L100 84 L60 60 M140 60 L180 36 L220 60 L180 84 L140 60" stroke-width="1.3" opacity="0.55"/>
+                <circle cx="60" cy="60" r="4.5" fill="currentColor" stroke="none"/>
+                <circle cx="140" cy="60" r="4.5" fill="currentColor" stroke="none"/>
+                <circle cx="220" cy="60" r="4.5" fill="currentColor" stroke="none"/>
               </svg>
             </div>
-            <h3>Self-Imaging &amp; 3D Light Shaping</h3>
+            <h3>Self-imaging and 3D light shaping</h3>
             <p>
-              Programmable self-imaging based on the Montgomery effect: structured fields that reproduce a pattern
-              at many planes along propagation, for multi-plane imaging and optical trapping.
+              Talbot and Montgomery effects: fields whose spatial frequencies are chosen so that a pattern or a tightly
+              focused spot forms again and again at programmed distances along the beam.
             </p>
-            <span class="card-status">Active · Harvard 2025–</span>
-          </div>
+            <span class="card-paper-count">Overview and papers &rarr;</span>
+          </a>
+
+          <a class="research-card topic-card reveal" href="/research/compact-instrumentation.html">
+            <div class="card-thumb" aria-hidden="true">
+              <svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-linecap="round">
+                <rect x="80" y="30" width="80" height="60" rx="2" stroke-width="1.5"/>
+                <path d="M88 82 L104 38 M100 82 L116 38 M114 82 L130 38 M130 82 L146 38 M148 82 L158 54" stroke-width="1" opacity="0.5"/>
+                <path d="M24 60 L80 60" stroke-width="1.8"/>
+                <path d="M70 55 L80 60 L70 65" stroke-width="1.5"/>
+                <path d="M96 60 L96 104 M118 60 L118 104 M142 60 L142 104" stroke-width="1.5" opacity="0.8"/>
+              </svg>
+            </div>
+            <h3>Compact instrumentation with r-CBGs</h3>
+            <p>
+              Rotated chirped volume Bragg gratings spread the spectrum of light inside a block of glass, replacing
+              the grating, lens and free space of conventional spectrometers and pulse shapers.
+            </p>
+            <span class="card-paper-count">Overview and papers &rarr;</span>
+          </a>
 
         </div>
       </div>
@@ -212,16 +259,17 @@
         <h2 class="section-title">Selected Publications</h2>
         <p class="section-intro">
           <strong class="stat-num">50+</strong> peer-reviewed articles &middot; <strong class="stat-num">2,600+</strong> citations.
-          <a href="https://scholar.google.com/citations?user=RJUJREIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Full list on Google Scholar &rarr;</a>
+          <a href="/publications.html">Full publication list &rarr;</a>
+          <span class="pub-secondary">Also on <a href="https://scholar.google.com/citations?user=RJUJREIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</span>
         </p>
 
         <div class="pub-list">
 
           <div class="pub-item pub-featured reveal">
             <div class="pub-venue">Optica &middot; 2026 <span class="pub-badge pub-badge--new">New</span></div>
-            <p class="pub-title"><a href="https://doi.org/10.1364/OPTICA.582198" target="_blank" rel="noopener noreferrer">Observation of spatially structured Montgomery effect in free space</a></p>
-            <p class="pub-authors"><strong>M. Yessenov</strong> et al.</p>
-            <p class="pub-teaser">First experimental observation of the Montgomery self-imaging effect with spatially structured light in free space.</p>
+            <p class="pub-title"><a href="https://doi.org/10.1364/OPTICA.582198" target="_blank" rel="noopener noreferrer">Observation of the spatially structured Montgomery effect in free space</a></p>
+            <p class="pub-authors"><strong>M. Yessenov</strong>, L. Sacchi, A. Palmieri, L. A. Hall, A. F. Abouraddy, F. Capasso</p>
+            <p class="pub-teaser">The Montgomery effect generalizes Talbot self-imaging from periodic to aperiodic fields. We observe it directly: a phase-programmed beam reforms tightly focused spots at chosen distances in free space, with low background between them.</p>
             <div class="pub-links">
               <a href="https://doi.org/10.1364/OPTICA.582198" target="_blank" rel="noopener noreferrer" class="pub-link">Paper</a>
               <a href="https://arxiv.org/abs/2510.16269" target="_blank" rel="noopener noreferrer" class="pub-link pub-link--preprint">arXiv</a>
@@ -229,21 +277,31 @@
           </div>
 
           <div class="pub-item reveal">
-            <div class="pub-venue">Advances in Optics and Photonics &middot; 2022 <span class="pub-badge pub-badge--review">Review</span></div>
-            <p class="pub-title"><a href="https://opg.optica.org/aop/abstract.cfm?uri=aop-14-3-455" target="_blank" rel="noopener noreferrer">Space-time wave packets</a></p>
-            <p class="pub-authors"><strong>M. Yessenov</strong>, L. A. Hall, K. L. Schepler, A. F. Abouraddy</p>
-            <p class="pub-teaser">Comprehensive invited review of the theory, synthesis methods, and experimental demonstrations of space-time structured light.</p>
+            <div class="pub-venue">Nature Photonics &middot; 2026 <span class="pub-badge pub-badge--new">New</span></div>
+            <p class="pub-title"><a href="https://doi.org/10.1038/s41566-026-02003-0" target="_blank" rel="noopener noreferrer">On-chip space&ndash;time wave packet laser array</a></p>
+            <p class="pub-authors">J. Lee, H. Ren, Y. G. Liu, <strong>M. Yessenov</strong>, Y. Wei, B. Huh, &hellip;, M. Khajavikhan</p>
+            <p class="pub-teaser">An integrated semiconductor laser array emits incoherent space-time wave packets directly, without external pulse shaping. The beams are propagation-invariant and self-healing, and tuning their spatial&ndash;spectral correlations sets their width and propagation length.</p>
             <div class="pub-links">
-              <a href="https://opg.optica.org/aop/abstract.cfm?uri=aop-14-3-455" target="_blank" rel="noopener noreferrer" class="pub-link">Paper</a>
-              <a href="https://arxiv.org/abs/2201.08297" target="_blank" rel="noopener noreferrer" class="pub-link pub-link--preprint">arXiv</a>
+              <a href="https://doi.org/10.1038/s41566-026-02003-0" target="_blank" rel="noopener noreferrer" class="pub-link">Paper</a>
+            </div>
+          </div>
+
+          <div class="pub-item reveal">
+            <div class="pub-venue">Nature Communications &middot; 2025</div>
+            <p class="pub-title"><a href="https://doi.org/10.1038/s41467-025-63641-6" target="_blank" rel="noopener noreferrer">Ultrafast space-time optical merons in momentum-energy space</a></p>
+            <p class="pub-authors"><strong>M. Yessenov</strong>, A. H. Dorrah, C. Guo, L. A. Hall, J.-S. Park, J. Free, E. G. Johnson, F. Capasso, S. Fan, A. F. Abouraddy</p>
+            <p class="pub-teaser">Merons (half-skyrmions), a topological texture, imprinted on the spectral surface of an ultrafast pulse in momentum&ndash;energy space, giving a freely propagating optical structure localized in all three dimensions.</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1038/s41467-025-63641-6" target="_blank" rel="noopener noreferrer" class="pub-link">Paper</a>
+              <a href="https://arxiv.org/abs/2503.11980" target="_blank" rel="noopener noreferrer" class="pub-link pub-link--preprint">arXiv</a>
             </div>
           </div>
 
           <div class="pub-item reveal">
             <div class="pub-venue">Optics Letters &middot; 2023</div>
             <p class="pub-title"><a href="https://doi.org/10.1364/OL.483902" target="_blank" rel="noopener noreferrer">Ultra-compact synthesis of space-time wave packets</a></p>
-            <p class="pub-authors"><strong>M. Yessenov</strong>, A. F. Abouraddy</p>
-            <p class="pub-teaser">Compact, single-pass synthesis of space-time wave packets using a greatly simplified optical arrangement — an order-of-magnitude reduction in system footprint over prior implementations.</p>
+            <p class="pub-authors"><strong>M. Yessenov</strong>, O. Mhibik, L. Mach, T. M. Hayward, R. Menon, L. Glebov, I. Divliansky, A. F. Abouraddy</p>
+            <p class="pub-teaser">A chirped volume Bragg grating rotated by 45&deg; resolves and recombines the spectrum with no free-space propagation or collimating optics; with a phase plate between two such gratings, the synthesis setup fits in 25&nbsp;&times;&nbsp;25&nbsp;&times;&nbsp;8&nbsp;mm.</p>
             <div class="pub-links">
               <a href="https://doi.org/10.1364/OL.483902" target="_blank" rel="noopener noreferrer" class="pub-link">Paper</a>
               <a href="https://arxiv.org/abs/2212.12091" target="_blank" rel="noopener noreferrer" class="pub-link pub-link--preprint">arXiv</a>
@@ -251,10 +309,21 @@
           </div>
 
           <div class="pub-item reveal">
+            <div class="pub-venue">Advances in Optics and Photonics &middot; 2022 <span class="pub-badge pub-badge--review">Review</span></div>
+            <p class="pub-title"><a href="https://opg.optica.org/aop/abstract.cfm?uri=aop-14-3-455" target="_blank" rel="noopener noreferrer">Space-time wave packets</a></p>
+            <p class="pub-authors"><strong>M. Yessenov</strong>, L. A. Hall, K. L. Schepler, A. F. Abouraddy</p>
+            <p class="pub-teaser">Invited review of the theory, synthesis methods, and experimental demonstrations of space-time structured light.</p>
+            <div class="pub-links">
+              <a href="https://opg.optica.org/aop/abstract.cfm?uri=aop-14-3-455" target="_blank" rel="noopener noreferrer" class="pub-link">Paper</a>
+              <a href="https://arxiv.org/abs/2201.08297" target="_blank" rel="noopener noreferrer" class="pub-link pub-link--preprint">arXiv</a>
+            </div>
+          </div>
+
+          <div class="pub-item reveal">
             <div class="pub-venue">Nature Photonics &middot; 2020</div>
             <p class="pub-title"><a href="https://doi.org/10.1038/s41566-020-0645-6" target="_blank" rel="noopener noreferrer">Anomalous refraction of optical spacetime wave packets</a></p>
             <p class="pub-authors">B. Bhaduri, <strong>M. Yessenov</strong>, A. F. Abouraddy</p>
-            <p class="pub-teaser">Space-time wave packets crossing a dielectric interface undergo refraction that violates Snell's law — a fundamentally new optical effect.</p>
+            <p class="pub-teaser">Space-time wave packets crossing a planar interface between two dielectrics refract differently from conventional pulses: the change in their group velocity is set by their spatio-temporal structure, not only by the two refractive indices.</p>
             <div class="pub-links">
               <a href="https://doi.org/10.1038/s41566-020-0645-6" target="_blank" rel="noopener noreferrer" class="pub-link">Paper</a>
               <a href="https://arxiv.org/abs/1912.13341" target="_blank" rel="noopener noreferrer" class="pub-link pub-link--preprint">arXiv</a>
@@ -387,7 +456,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 Murat Yessenov &middot; Harvard University</p>
+    <p>&copy; 2026 Murat Yessenov &middot; Last updated November 2026</p>
   </footer>
 
   <script src="assets/js/main.js"></script>
