@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Self-imaging and 3D light shaping | Murat Yessenov</title>
+  <meta name="description" content="Research on self-imaging and three-dimensional light shaping: the Talbot effect in space-time wave packets and the Montgomery effect in free space, where a programmed beam reforms tightly focused spots at chosen distances. Overview, key results and publications." />
+  <meta name="author" content="Murat Yessenov" />
+  <meta name="theme-color" content="#1a2744" />
+  <link rel="canonical" href="https://yessenov.org/research/self-imaging.html" />
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/icon-512.png" />
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yessenov.org/research/self-imaging.html" />
+  <meta property="og:image" content="https://yessenov.org/assets/img/photo.jpg" />
+  <meta property="og:image:alt" content="Portrait of Murat Yessenov" />
+  <meta property="og:title" content="Self-imaging and 3D light shaping | Murat Yessenov" />
+  <meta property="og:description" content="Light fields that reproduce themselves at chosen distances: space-time Talbot effects and the Montgomery effect in free space. Overview, key results and publications." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Self-imaging and 3D light shaping | Murat Yessenov" />
+  <meta name="twitter:description" content="Light fields that reproduce themselves at chosen distances: space-time Talbot effects and the Montgomery effect in free space. Overview, key results and publications." />
+  <meta name="twitter:image" content="https://yessenov.org/assets/img/photo.jpg" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <header id="site-header">
+    <nav>
+      <a class="nav-name" href="/">Murat Yessenov</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#news">News</a></li>
+        <li><a href="/#research" aria-current="true">Research</a></li>
+        <li><a href="/publications.html">Publications</a></li>
+        <li><a href="/#cv">CV</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-controls="nav-links" aria-expanded="false">&#9776;</button>
+    </nav>
+  </header>
+
+    <main>
+
+    <section id="topic-overview">
+      <div class="section-inner">
+        <a class="topic-back" href="/#research">&larr; Research</a>
+        <p class="topic-kicker">Research topic</p>
+        <h1 class="section-title">Self-imaging and 3D light shaping</h1>
+        <div class="topic-text">
+          <p>
+            A periodic grating illuminated by a laser reproduces its own image at regular distances behind it, with no
+            lens involved. This is the Talbot effect. It happens because each plane-wave component of the field
+            accumulates a phase as it propagates, and for a periodic object these phases all realign at the same planes.
+            Periodicity is not actually required: Montgomery showed that any field whose spatial frequencies are chosen
+            so that their axial phases realign together will image itself. Such fields need not be periodic in the
+            transverse plane, and they can be tightly localized.
+          </p>
+          <p>
+            I study how far self-imaging can be engineered. During my Ph.D. with Ayman Abouraddy we found Talbot
+            effects that exist only in space and time jointly: in space-time wave packets the revivals can be hidden
+            from any intensity measurement that averages over time, and a pulsed lattice can revive even though
+            diffraction and dispersion both act on it. At Harvard, in the Capasso group, I turned to the Montgomery
+            effect in free space. By programming the radial spatial frequencies of a laser beam with a hologram, we
+            produce a field that refocuses to a small spot again and again at chosen distances, with the spot size and
+            the revival distance set independently.
+          </p>
+          <p>
+            Because the pattern is written into the spectrum of the beam, the same approach shapes light in three
+            dimensions: structured beams can be made to reappear at many planes along propagation, and a pattern that
+            is partly blocked recovers by itself further on. One application we are interested in is multi-plane
+            microscopy, where light has to reach several depths at once.
+          </p>
+        </div>
+        <!-- Figure slot (task T7b): add <figure class="topic-figure"> with image, alt text and a caption ending in a credit line. -->
+      </div>
+    </section>
+
+    <section id="key-results">
+      <div class="section-inner">
+        <h2 class="section-title">Key results</h2>
+        <ul class="key-results">
+          <li>
+            <strong>Montgomery effect observed in free space.</strong> A dynamic hologram discretizes the radial spatial frequencies of a laser beam, so that tightly focused spots of about 10&nbsp;&micro;m reappear periodically, with self-imaging observed at distances from 30 to 100&nbsp;mm. The spot size and the self-imaging period can be set independently, and the same method produces revivals of Laguerre-Gaussian, Hermite-Gaussian, Ince-Gaussian and Airy beams.
+            <span class="key-ref">Optica 13, 195 (2026)</span>
+          </li>
+          <li>
+            <strong>Self-healing in discrete steps.</strong> When part of a Montgomery pattern is blocked, the pattern recovers, but the recovery distance comes in whole multiples of the self-imaging period rather than varying continuously as for earlier self-healing beams; the argument follows from Babinet&rsquo;s principle. Experiments with a programmable holographic setup used circular obstructions up to 20 times the focal spot size.
+            <span class="key-ref">Opt. Lett. 51, 4008 (2026)</span>
+          </li>
+          <li>
+            <strong>Chebyshev revivals (preprint).</strong> Sampling the angular spectrum at inverse powers of the mode index gives each mode its own integer rephasing period, so the first exact revival occurs where all of them coincide. In units of the Talbot distance this is lcm(1,&nbsp;&hellip;,&nbsp;<em>M</em>), fixed by the spectral cutoff <em>M</em> and equal to the exponential of the second Chebyshev function of number theory; measured revival distances follow the predicted staircase.
+            <span class="key-ref">arXiv:2608.22415</span>
+          </li>
+          <li>
+            <strong>The space-time Talbot effect.</strong> Diffraction and dispersion normally act over incommensurate length scales, so a pulsed field does not revive in space and time together. A wave packet whose diffraction and dispersion lengths are equal in free space forms a spatiotemporal lattice that revives periodically despite both.
+            <span class="key-ref">APL Photonics 6, 056105 (2021)</span>
+          </li>
+          <li>
+            <strong>A veiled Talbot effect.</strong> Tight correlations between the spatial and temporal frequencies of an ultrafast pulse remove the usual axial revivals of its intensity. A space-time Talbot effect is still present, but it appears only in time-resolved measurements; time-averaged intensity hides it.
+            <span class="key-ref">Phys. Rev. Lett. 125, 243901 (2020)</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="topic-publications">
+      <div class="section-inner">
+        <h2 class="section-title">Publications</h2>
+        <p class="section-intro">Papers on this topic, newest first. The <a href="/publications.html">full publication list</a> has everything else.</p>
+        <div class="pub-list">
+          <div class="pub-item">
+            <div class="pub-venue">arXiv preprint</div>
+            <p class="pub-title"><a href="https://arxiv.org/abs/2608.22415" target="_blank" rel="noopener noreferrer">Chebyshev self-imaging from inverse-sampled angular spectra</a></p>
+            <p class="pub-authors">L. A. Hall, <strong>M. Yessenov</strong></p>
+            <p class="pub-cite">arXiv:2608.22415 (2026)</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2608.22415" target="_blank" rel="noopener noreferrer" class="pub-link pub-link--preprint">arXiv</a>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <div class="pub-venue">Optics Letters</div>
+            <p class="pub-title"><a href="https://doi.org/10.1364/OL.605394" target="_blank" rel="noopener noreferrer">Self-healing of the Montgomery pattern</a></p>
+            <p class="pub-authors">A. Xu, O. de Vries, A. Palmieri, <strong>M. Yessenov</strong>, A. F. Abouraddy, F. Capasso</p>
+            <p class="pub-cite"><em>Optics Letters</em> 51(14), 4008&ndash;4011 (2026)</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1364/OL.605394" target="_blank" rel="noopener noreferrer" class="pub-link">Paper</a>
+              <a href="https://arxiv.org/abs/2605.18318" target="_blank" rel="noopener noreferrer" class="pub-link pub-link--preprint">arXiv</a>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <div class="pub-venue">Optica</div>
+            <p class="pub-title"><a href="https://doi.org/10.1364/OPTICA.582198" target="_blank" rel="noopener noreferrer">Observation of the spatially structured Montgomery effect in free space</a></p>
+            <p class="pub-authors"><strong>M. Yessenov</strong>, L. Sacchi, A. Palmieri, L. A. Hall, A. F. Abouraddy, F. Capasso</p>
+            <p class="pub-cite"><em>Optica</em> 13(2), 195&ndash;202 (2026)</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1364/OPTICA.582198" target="_blank" rel="noopener noreferrer" class="pub-link">Paper</a>
+              <a href="https://arxiv.org/abs/2510.16269" target="_blank" rel="noopener noreferrer" class="pub-link pub-link--preprint">arXiv</a>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <div class="pub-venue">APL Photonics</div>
+            <p class="pub-title"><a href="https://doi.org/10.1063/5.0045310" target="_blank" rel="noopener noreferrer">The space-time Talbot effect</a></p>
+            <p class="pub-authors">L. A. Hall, <strong>M. Yessenov</strong>, S. A. Ponomarenko, A. F. Abouraddy</p>
+            <p class="pub-cite"><em>APL Photonics</em> 6(5), 056105 (2021)</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1063/5.0045310" target="_blank" rel="noopener noreferrer" class="pub-link">Paper</a>
+              <a href="https://arxiv.org/abs/2102.06769" target="_blank" rel="noopener noreferrer" class="pub-link pub-link--preprint">arXiv</a>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <div class="pub-venue">Physical Review Letters</div>
+            <p class="pub-title"><a href="https://doi.org/10.1103/PhysRevLett.125.243901" target="_blank" rel="noopener noreferrer">Veiled Talbot effect</a></p>
+            <p class="pub-authors"><strong>M. Yessenov</strong>, L. A. Hall, S. A. Ponomarenko, A. F. Abouraddy</p>
+            <p class="pub-cite"><em>Physical Review Letters</em> 125, 243901 (2020)</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1103/PhysRevLett.125.243901" target="_blank" rel="noopener noreferrer" class="pub-link">Paper</a>
+              <a href="https://arxiv.org/abs/2004.04875" target="_blank" rel="noopener noreferrer" class="pub-link pub-link--preprint">arXiv</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+</main>
+
+  <footer>
+    <p>&copy; 2026 Murat Yessenov &middot; Last updated November 2026</p>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
