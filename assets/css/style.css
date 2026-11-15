@@ -841,3 +841,10 @@ footer {
   font-weight: 500;
 }
 .not-found-links a:hover { background: var(--navy); border-color: var(--navy); color: var(--white); }
+
+/* ── Topic figures and card thumbnails ── */
+.card-thumb { aspect-ratio: 16 / 9; }
+.card-thumb.thumb-contain img { object-fit: contain; padding: 0.35rem; }
+.topic-figure--narrow { max-width: 460px; }
+.topic-figure a { display: block; }
+.topic-figure a:hover img { border-color: var(--accent); }
