@@ -819,3 +819,25 @@ footer {
 @media (max-width: 680px) {
   .topic-grid { grid-template-columns: 1fr; }
 }
+
+/* ── 404 page ── */
+.not-found { min-height: calc(100vh - 56px - 4.5rem); }
+.not-found .section-intro { margin-bottom: 1.25rem; }
+.not-found-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.not-found-links a {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.not-found-links a:hover { background: var(--navy); border-color: var(--navy); color: var(--white); }
